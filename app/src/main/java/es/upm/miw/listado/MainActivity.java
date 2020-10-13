@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
 
     final String TAG = "MiW";
     ListView lvListado;
-    // String[] datos = {"Dato 00", "Dato 01", "Dato 02"};
+    String[] datos = {"Dato 33", "Dato 44", "Dato 55"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,16 +21,19 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         lvListado = findViewById(R.id.listado);
-        ArrayAdapter<CharSequence> adaptador = ArrayAdapter.createFromResource(
-                this,
-                R.array.datos,
-                R.layout.elemento
-        );
-//        ArrayAdapter<String> adaptador = new ArrayAdapter<>(
+//        ArrayAdapter<CharSequence> adaptador = ArrayAdapter.createFromResource(
 //                this,
-//                android.R.layout.simple_list_item_1,
-//                datos
+//                R.array.datos,
+//                R.layout.elemento
 //        );
+
+        // Alternativa extrayendo los datos de array local
+        ArrayAdapter<String> adaptador = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_list_item_1,
+                datos
+        );
+
         lvListado.setAdapter(adaptador);
         lvListado.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

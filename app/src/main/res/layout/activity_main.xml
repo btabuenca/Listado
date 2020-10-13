@@ -12,6 +12,9 @@
     tools:context="es.upm.miw.listado.MainActivity">
 
     <TextView
+        android:text="@string/listview_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

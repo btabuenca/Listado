@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Listado</string>
+    <string name="listview_name">Listado de datos</string>
 </resources>
