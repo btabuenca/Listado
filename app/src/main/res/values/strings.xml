@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Listado</string>
-    <string name="listview_name">Listado de datos</string>
+    <string name="listview_name_xml">Datos /res/values/datos.xml</string>
+    <string name="listview_name_csv">Datos /assets/telemetrias.csv</string>
 </resources>
